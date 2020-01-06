@@ -1,0 +1,92 @@
+.logo{
+	max-width: 80px;
+}
+
+
+ul, li{
+	display: inline;
+	padding: 0;
+}
+
+header{
+	display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 3rem;
+}
+
+.item6 ul li{
+
+    display: block;
+    /* justify-content: space-between; */
+    /* align-items: center; */
+    height: 3rem;
+    text-align: center;
+    /* top: 50%; */
+    /*position: fixed;
+     margin: auto; */
+    /* z-index: 500;*/
+}
+
+.centrar{
+	display: block;
+	text-align: center;
+}
+
+.item4 .centrar{
+	top: 50%; 
+    position: relative;
+}
+
+.item6 .centrar {
+	top: 42%; 
+    position: relative;
+}
+
+#menu{
+	max-width: 37px;
+}
+
+#face{
+	max-width: 13px;
+}
+
+#insta{
+	max-width: 23px;
+}
+
+#twitter{
+	max-width: 23px;
+}
+
+
+#face:hover, #insta:hover, #twitter:hover{
+	fill: #007fab;
+}
+
+
+.active {
+
+  color: #007fab;
+  
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
