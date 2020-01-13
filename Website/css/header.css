@@ -2,7 +2,6 @@
 	max-width: 80px;
 }
 
-
 ul, li{
 	display: inline;
 	padding: 0;
@@ -18,14 +17,8 @@ header{
 .item6 ul li{
 
     display: block;
-    /* justify-content: space-between; */
-    /* align-items: center; */
     height: 3rem;
     text-align: center;
-    /* top: 50%; */
-    /*position: fixed;
-     margin: auto; */
-    /* z-index: 500;*/
 }
 
 .centrar{
@@ -59,21 +52,24 @@ header{
 	max-width: 23px;
 }
 
-
 #face:hover, #insta:hover, #twitter:hover{
 	fill: #007fab;
 }
 
-
-.active {
+.active{
 
   color: #007fab;
-  
+
 }
 
 
+/* seta */
 
-
+.seta{
+	position: fixed;
+    bottom: 32px;
+    left: 50%;
+}
 
 
 

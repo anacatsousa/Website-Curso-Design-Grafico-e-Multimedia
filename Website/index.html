@@ -10,6 +10,8 @@
 		<link rel="stylesheet" type="text/css" href="css/carousel.css"/>
 		<link rel="stylesheet" type="text/css" href="css/container.css"/>
 		<link rel="stylesheet" type="text/css" href="css/tipografia.css"/>
+		<link rel="stylesheet" type="text/css" href="css/responsive.css"/>
+	</head>
 	</head>
 	<body>
 		<div class="grid-container">
@@ -38,61 +40,75 @@
 				</a>
 			</div>
 			<div class="grid-item item5">
-
 				<div class="mySlides1">
-					<img class="mySlides2" src="img/img1.jpg" style="width:100%">
-					<img class="mySlides2" src="img/img2.jpg" style="width:100%">
-					<img class="mySlides2" src="img/img3.jpg" style="width:100%">
+					<div class="slidshow mySlides2" id="slidshow1">
+						<img src="img/img1.jpg">
+					</div>
+					<div class="slidshow mySlides2" id="slidshow2" style="display: inline;">
+						<img src="img/img2.jpg">
+					</div>
+					<div class="slidshow mySlides2" id="slidshow3" style="display: inline;">
+						<img  src="img/img3.jpg">
+					</div>
+<!--
+						<img class="mySlides2" src="img/img1.jpg"  style="width: 100%">
+
+						<img class="mySlides2" src="img/img2.jpg"  style="width: 100%">
+
+						<img class="mySlides2" src="img/img3.jpg"  style="width: 100%"> -->
+					
 				    <button class="botao1" onclick="plusDivs(-1, 1)">&#10094;</button>
   					<button class="botao2" onclick="plusDivs(1, 1)">&#10095;</button>
 				</div>
-
 				<div class="mySlides1">
-					<img src="img/curso.jpg" style="width:100%">
+					<!--<img src="img/curso.jpg" style="width:100%">-->
+					<div class="curso">
+						<img src="img/cursopng.png">
+					</div>
 					<button class="botaocurso">&#10095;</button>
 				</div>
-
 				<div class="mySlides1 border">
 					<h1>Portfólios</h1>
-					<div class="portfolioalinhar" id="myDIV1">
-						<button class="botaoport activee">Ilustrações</button>
-						<button class="botaoport">Tipografia</button>
-						<button class="botaoport">Webdesign</button>
-						<button class="botaoport">Motion Design</button>
-						<form>
-					    	<div class="input-icons"> 
-					        	<i class="icon">
-					        		<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"/><path d="M0 0h24v24H0z" fill="none"/></svg>
-					        	</i>
-					        	    <input type="text" class="input-field" placeholder="Pesquisar">
-					        </div>
-				        </form>
-					</div>
-					<div class="row">
-						<div class="column imgport">
-							<img src="img/port1.jpg" />
+					<div class="portfolios">
+						<div class="portfolioalinhar" id="myDIV1">
+							<button class="botaoport activee">Ilustrações</button>
+							<button class="botaoport">Tipografia</button>
+							<button class="botaoport">Webdesign</button>
+							<button class="botaoport">Motion Design</button>
+							<form>
+						    	<div class="input-icons"> 
+						        	<i class="icon">
+						        		<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"/><path d="M0 0h24v24H0z" fill="none"/></svg>
+						        	</i>
+						        	    <input type="text" class="input-field" placeholder="Pesquisar">
+						        </div>
+					        </form>
 						</div>
-						<div class="column imgport">
-						    <img src="img/port2.jpg" />
+						<div class="row">
+							<div class="column imgport">
+								<img src="img/port1.jpg" />
+							</div>
+							<div class="column imgport">
+							    <img src="img/port2.jpg" />
+							</div>
+							<div class="column imgport">
+								<img src="img/port3.jpg" />
+							</div>
+							<div class="column imgport">
+								<img src="img/port4.jpg" />
+							</div>
+							<div class="column">
+								<img src="img/port5.jpg" />
+							</div>
 						</div>
-						<div class="column imgport">
-							<img src="img/port3.jpg" />
+						<div class="centrarbotao">
+							<button class="botaoport"> Mais</button>
 						</div>
-						<div class="column imgport">
-							<img src="img/port4.jpg" />
-						</div>
-						<div class="column">
-							<img src="img/port5.jpg" />
-						</div>
-					</div>
-					<div class="centrarbotao">
-						<button class="botaoport"> Mais</button>
 					</div>
 				</div>
-
 				<div class="mySlides1 border">
 					<h1>Eventos</h1>
-					<div class="row">
+					<div class="row eventos">
 						<div class="column imgeventos">
 						    <img src="img/evento1.jpg" />
 						    <img src="img/evento2.jpg" />
@@ -111,42 +127,56 @@
 					  	</div>
 					</div>
 				</div>
-
 				<div class="mySlides1 border">
 					<h1>Docentes</h1>
-					<div class="row">
-						<div class="column">
-						    <img src="img/docente.jpg" class="docentes">
-						    <img src="img/docente.jpg" class="docentes">
+					<div class="row docentes">
+						<div class="column" id="marginr">
+							<div class="docenteshover" data-text="Ana Maria Guerreiro Grau: Doutoramento UCS: Desenho I/ Desenho II anamaria@my.ipleiria.pt">
+								<img src="img/docente.jpg" />
+							</div>
+						    <div class="docenteshover" data-text="Ana Maria Guerreiro Grau: Doutoramento UCS: Desenho I/ Desenho II anamaria@my.ipleiria.pt">
+								<img src="img/docente.jpg" />
+							</div>
 						</div>
-						<div class="column">
-						    <img src="img/docente.jpg" class="docentes">
-						    <img src="img/docente.jpg" class="docentes">
+						<div class="column margin">
+						    <div class="docenteshover" data-text="Ana Maria Guerreiro Grau: Doutoramento UCS: Desenho I/ Desenho II anamaria@my.ipleiria.pt">
+								<img src="img/docente.jpg" />
+							</div>
+						    <div class="docenteshover" data-text="Ana Maria Guerreiro Grau: Doutoramento UCS: Desenho I/ Desenho II anamaria@my.ipleiria.pt">
+								<img src="img/docente.jpg" />
+							</div>
 						</div>
-						<div class="column">
-						    <img src="img/docente.jpg" class="docentes">
-						    <img src="img/docente.jpg" class="docentes">
+						<div class="column margin">
+						    <div class="docenteshover" data-text="Ana Maria Guerreiro Grau: Doutoramento UCS: Desenho I/ Desenho II anamaria@my.ipleiria.pt">
+								<img src="img/docente.jpg" />
+							</div>
+						     <div class="docenteshover" data-text="Ana Maria Guerreiro Grau: Doutoramento UCS: Desenho I/ Desenho II anamaria@my.ipleiria.pt">
+								<img src="img/docente.jpg" />
+							</div>
 						</div>
-					  	<div class="column">
-						    <img src="img/docente.jpg" class="docentes">
-						    <img src="img/docente.jpg" class="docentes">
+					  	<div class="column" id="marginl">
+						     <div class="docenteshover" data-text="Ana Maria Guerreiro Grau: Doutoramento UCS: Desenho I/ Desenho II anamaria@my.ipleiria.pt">
+								<img src="img/docente.jpg" />
+							</div>
+						    <div class="docenteshover" data-text="Ana Maria Guerreiro Grau: Doutoramento UCS: Desenho I/ Desenho II anamaria@my.ipleiria.pt">
+								<img src="img/docente.jpg" />
+							</div>
 					  	</div>
 					</div>
 				</div>
 				<div class="mySlides1 border">
 					<h1>Contactos</h1>
 					<div class="contactos">
-					<ul>
-						<li>ESCOLA SUPERIOR DE ARTES E DESIGN (CALDAS DA RAINHA)</li>
-						<li>Campus 3 </li>
-						<li>Rua Isidoro Inácio Alves de Carvalho</li>
-						<li>2500-321, Caldas da Rainha - Portugal</li>
-						<li>Telefone (+351) 262830900 | Fax (+351) 262830904</li>
-						<li>dgm@gmail.com </li>
-					</ul>
+						<ul>
+							<li>ESCOLA SUPERIOR DE ARTES E DESIGN (CALDAS DA RAINHA)</li>
+							<li>Campus 3 </li>
+							<li>Rua Isidoro Inácio Alves de Carvalho</li>
+							<li>2500-321, Caldas da Rainha - Portugal</li>
+							<li>Telefone (+351) 262830900 | Fax (+351) 262830904</li>
+							<li>dgm@gmail.com </li>
+						</ul>
 					</div>
 				</div>
-
 			</div>
 			<div class="grid-item item6">
 				<ul class="centrar">
@@ -176,17 +206,22 @@
 					</li>
 				</ul>
 			</div>
-			<div class="grid-item item7"></div>
+			<!-- <div class="grid-item item7"></div>
 			<div class="grid-item item8">
 				<a href="#" class="centrar" onclick="plusDivs(1, 0)">
 					<svg xmlns="http://www.w3.org/2000/svg" width="37" height="37" viewBox="0 0 24 24"><path fill="none" d="M0 0h24v24H0V0z"/><path fill="#010101" d="M20 12l-1.41-1.41L13 16.17V4h-2v12.17l-5.58-5.59L4 12l8 8 8-8z"/></svg>
 				</a>
 			</div>
-			<div class="grid-item item9"></div>
+			<div class="grid-item item9"></div>-->
 		</div>
+		<a href="#" class="seta" onclick="plusDivs(1, 0)">
+			<svg xmlns="http://www.w3.org/2000/svg" width="37" height="37" viewBox="0 0 24 24"><path fill="none" d="M0 0h24v24H0V0z"/><path fill="#010101" d="M20 12l-1.41-1.41L13 16.17V4h-2v12.17l-5.58-5.59L4 12l8 8 8-8z"/></svg>
+		</a>
+		
 
 		<!-- javascript-->
 		<script src="js/carousel.js"></script>
 		<script src="js/active.js"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 	</body>
 </html>
